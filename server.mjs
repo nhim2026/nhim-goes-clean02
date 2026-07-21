@@ -34,7 +34,7 @@ const server = http.createServer(async (req, res) => {
     if (url.pathname === '/api/health') {
       return sendJson(res, 200, {
         ok: true,
-        version: '1.0.2',
+        version: '1.1.0',
         aiConfigured: Boolean(process.env.OPENAI_API_KEY)
       });
     }

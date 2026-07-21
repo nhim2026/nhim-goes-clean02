@@ -1,7 +1,13 @@
-# Nhím Goes v1.0.3 — FLAT GitHub Upload
+# Nhím Goes v1.1 — UI Redesign FLAT Upload
 
-This package is intentionally flat so every file can be uploaded directly
-through GitHub's web uploader. Do not upload the ZIP itself; extract it and
-select all files inside.
+Mobile-first redesign with:
+- Today dashboard
+- Review focus card
+- Quick practice shortcuts
+- Library redesign
+- Journal timeline
+- Rich Settings / Personal screen
+- Bottom sheets for Capture, AI Fix, Chat, Review
+- Flat upload structure for GitHub web uploader
 
-Render: Docker runtime, Root Directory blank.
+Upload all files directly to repo root and overwrite existing files.

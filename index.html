@@ -3,20 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#fff7e8">
+  <meta name="theme-color" content="#F7F1E8">
   <title>Nhím Goes</title>
+  <meta name="description" content="Trợ lý học tiếng Anh cá nhân của Nhím">
   <link rel="manifest" href="/manifest.webmanifest">
   <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
 </head>
 <body>
-  <main id="app"></main>
-  <nav class="bottom-nav" aria-label="Main navigation">
-    <button data-tab="learn" class="active">Learn</button>
-    <button data-tab="library">Library</button>
-    <button data-tab="journal">Journal</button>
-    <button data-tab="settings">Settings</button>
-  </nav>
+  <div class="app-shell">
+    <main id="app"></main>
+    <nav class="bottom-nav" aria-label="Điều hướng chính">
+      <button data-tab="learn" class="nav-item active" aria-label="Hôm nay">
+        <span class="nav-icon">⌂</span><span>Hôm nay</span>
+      </button>
+      <button data-tab="library" class="nav-item" aria-label="Thư viện">
+        <span class="nav-icon">◫</span><span>Thư viện</span>
+      </button>
+      <button data-tab="journal" class="nav-item" aria-label="Hành trình">
+        <span class="nav-icon">✦</span><span>Hành trình</span>
+      </button>
+      <button data-tab="settings" class="nav-item" aria-label="Cá nhân">
+        <span class="nav-icon">☺</span><span>Cá nhân</span>
+      </button>
+    </nav>
+  </div>
+
+  <div id="sheetBackdrop" class="sheet-backdrop hidden"></div>
+  <section id="sheet" class="bottom-sheet hidden" aria-modal="true" role="dialog"></section>
+
   <script type="module" src="/app.js"></script>
 </body>
 </html>
