@@ -1,0 +1,16 @@
+{
+  "name": "Nhím Goes",
+  "short_name": "Nhím Goes",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf0",
+  "theme_color": "#fff7e8",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
