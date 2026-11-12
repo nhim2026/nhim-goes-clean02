@@ -25,16 +25,17 @@ Soạn 12/11/2026. Nối tiếp series "Đừng hỏi bạn, hỏi Bé Em" (Mùa
 
 Thông số: 1320×2868, 60fps (S1 là 120fps). Video dựng ra xuất 1080×1920, 30fps như các tập trước.
 
-## ⚠️ Cần Nhím xác nhận trước khi dựng (dữ liệu cá nhân)
+## Quy tắc dữ liệu cá nhân (Nhím chốt 12/11)
 
-Lần trước README đã dặn che số tiền gói đăng ký và hồ sơ có ngày sinh. 5 source này có:
+**Mọi thông tin cá nhân đều làm mờ.** Công cụ `tools/blur_rec.py` dùng OCR tiếng Việt quét từng khung hình, tự tìm tên, ngày tháng và các từ trong danh sách rồi làm mờ đúng chỗ, kể cả khi màn hình đang cuộn.
 
-| Source | Dữ liệu | Đề xuất |
-|---|---|---|
-| S2 | Số nợ 200tr / 400tr, tên "A Minh", "Mẹ" | Nếu là dữ liệu demo thì giữ (số lớn càng vui). Nếu là thật thì làm mờ số |
-| S3 | Danh sách gói + tổng tiền thật | Giữ tên gói (ai cũng có Netflix), **làm mờ tổng tiền** hoặc xác nhận là ok |
-| S4 | Tên + avatar bạn bè thật (a Công, c Thu, Hứa Quang Hán, Ken, Khoa…), hồ sơ "Võ Anh Khoa 12/07/1996" | **Làm mờ tên**, giữ nhãn "GẦN TÀN" + nút Hâm nóng. Bỏ đoạn hồ sơ Khoa hoặc làm mờ ngày sinh |
-| S5 | Tên "Tí", "Louis", sở thích người thân | Tên gọi ở nhà, mức rủi ro thấp. Nhím xác nhận là được |
+| Source | Làm mờ |
+|---|---|
+| S5 (T6) | Tên người thân (Tí, Louis), ngày sinh, số ngày còn lại, dị ứng, lời nhắc "Mua canxi cho ngoại". Câu trích trên màn hình đổi "Tí" thành "em trai" |
+| S4 (T10) | Tên + avatar bạn bè trong danh sách GẦN TÀN. Bỏ đoạn hồ sơ Khoa (có ngày sinh) |
+| S2 (T9) | Số nợ là dữ liệu demo nên giữ. Vẫn làm mờ tên người nếu là tên thật |
+| S3 (T8) | Nhím chọn giữ số tiền gói đăng ký |
+| S1 (T7, A5) | Rà lại khi dựng |
 
 ---
 
