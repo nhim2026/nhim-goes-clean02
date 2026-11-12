@@ -1,0 +1,1122 @@
+[
+ {
+  "line": "hook",
+  "scene": "hook",
+  "text": "Tự",
+  "start": 0.25,
+  "end": 0.501,
+  "id": "w0"
+ },
+ {
+  "line": "hook",
+  "scene": "hook",
+  "text": "xem",
+  "start": 0.501,
+  "end": 0.782,
+  "id": "w1"
+ },
+ {
+  "line": "hook",
+  "scene": "hook",
+  "text": "Tarot,",
+  "start": 0.782,
+  "end": 1.12,
+  "id": "w2"
+ },
+ {
+  "line": "hook",
+  "scene": "hook",
+  "text": "ok",
+  "start": 1.33,
+  "end": 1.628,
+  "id": "w3"
+ },
+ {
+  "line": "hook",
+  "scene": "hook",
+  "text": "hem?",
+  "start": 1.628,
+  "end": 1.96,
+  "id": "w4"
+ },
+ {
+  "line": "hook2",
+  "scene": "hook",
+  "text": "Có",
+  "start": 2.21,
+  "end": 2.443,
+  "id": "w5"
+ },
+ {
+  "line": "hook2",
+  "scene": "hook",
+  "text": "Ember",
+  "start": 2.443,
+  "end": 2.756,
+  "id": "w6"
+ },
+ {
+  "line": "hook2",
+  "scene": "hook",
+  "text": "lo",
+  "start": 2.756,
+  "end": 2.988,
+  "id": "w7"
+ },
+ {
+  "line": "hook2",
+  "scene": "hook",
+  "text": "hết",
+  "start": 2.988,
+  "end": 3.247,
+  "id": "w8"
+ },
+ {
+  "line": "hook2",
+  "scene": "hook",
+  "text": "nè!",
+  "start": 3.247,
+  "end": 3.48,
+  "id": "w9"
+ },
+ {
+  "line": "home",
+  "scene": "home",
+  "text": "Mở",
+  "start": 4.35,
+  "end": 4.553,
+  "id": "w10"
+ },
+ {
+  "line": "home",
+  "scene": "home",
+  "text": "app,",
+  "start": 4.553,
+  "end": 4.78,
+  "id": "w11"
+ },
+ {
+  "line": "home",
+  "scene": "home",
+  "text": "bấm",
+  "start": 5.06,
+  "end": 5.302,
+  "id": "w12"
+ },
+ {
+  "line": "home",
+  "scene": "home",
+  "text": "Tarot",
+  "start": 5.302,
+  "end": 5.593,
+  "id": "w13"
+ },
+ {
+  "line": "home",
+  "scene": "home",
+  "text": "ngay",
+  "start": 5.593,
+  "end": 5.86,
+  "id": "w14"
+ },
+ {
+  "line": "home",
+  "scene": "home",
+  "text": "trên",
+  "start": 5.86,
+  "end": 6.127,
+  "id": "w15"
+ },
+ {
+  "line": "home",
+  "scene": "home",
+  "text": "Trang",
+  "start": 6.127,
+  "end": 6.418,
+  "id": "w16"
+ },
+ {
+  "line": "home",
+  "scene": "home",
+  "text": "chủ.",
+  "start": 6.418,
+  "end": 6.66,
+  "id": "w17"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "Tám",
+  "start": 7.85,
+  "end": 8.067,
+  "id": "w18"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "trải",
+  "start": 8.067,
+  "end": 8.307,
+  "id": "w19"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "bài",
+  "start": 8.307,
+  "end": 8.525,
+  "id": "w20"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "cho",
+  "start": 8.525,
+  "end": 8.742,
+  "id": "w21"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "từng",
+  "start": 8.742,
+  "end": 8.982,
+  "id": "w22"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "nỗi",
+  "start": 8.982,
+  "end": 9.2,
+  "id": "w23"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "niềm:",
+  "start": 9.2,
+  "end": 9.44,
+  "id": "w24"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "một",
+  "start": 9.65,
+  "end": 9.929,
+  "id": "w25"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "lá,",
+  "start": 9.929,
+  "end": 10.18,
+  "id": "w26"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "ba",
+  "start": 10.42,
+  "end": 10.675,
+  "id": "w27"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "lá,",
+  "start": 10.675,
+  "end": 10.93,
+  "id": "w28"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "tình",
+  "start": 11.18,
+  "end": 11.421,
+  "id": "w29"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "cảm,",
+  "start": 11.421,
+  "end": 11.64,
+  "id": "w30"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "nhịp",
+  "start": 11.87,
+  "end": 12.13,
+  "id": "w31"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "tuần,",
+  "start": 12.13,
+  "end": 12.39,
+  "id": "w32"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "gương",
+  "start": 12.63,
+  "end": 12.916,
+  "id": "w33"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "kết",
+  "start": 12.916,
+  "end": 13.153,
+  "id": "w34"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "nối,",
+  "start": 13.153,
+  "end": 13.39,
+  "id": "w35"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "hay",
+  "start": 13.71,
+  "end": 13.945,
+  "id": "w36"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "tùy",
+  "start": 13.945,
+  "end": 14.18,
+  "id": "w37"
+ },
+ {
+  "line": "spreads",
+  "scene": "spreads",
+  "text": "chọn.",
+  "start": 14.18,
+  "end": 14.44,
+  "id": "w38"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "Chọn",
+  "start": 15.31,
+  "end": 15.524,
+  "id": "w39"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "bộ",
+  "start": 15.524,
+  "end": 15.698,
+  "id": "w40"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "bài",
+  "start": 15.698,
+  "end": 15.892,
+  "id": "w41"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "hợp",
+  "start": 15.892,
+  "end": 16.086,
+  "id": "w42"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "vibe:",
+  "start": 16.086,
+  "end": 16.3,
+  "id": "w43"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "Rider",
+  "start": 16.54,
+  "end": 16.813,
+  "id": "w44"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "Waite",
+  "start": 16.813,
+  "end": 17.087,
+  "id": "w45"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "cổ",
+  "start": 17.087,
+  "end": 17.29,
+  "id": "w46"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "điển,",
+  "start": 17.29,
+  "end": 17.54,
+  "id": "w47"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "hay",
+  "start": 17.82,
+  "end": 18.046,
+  "id": "w48"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "mặt",
+  "start": 18.046,
+  "end": 18.272,
+  "id": "w49"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "sau",
+  "start": 18.272,
+  "end": 18.499,
+  "id": "w50"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "hoa",
+  "start": 18.499,
+  "end": 18.725,
+  "id": "w51"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "bướm",
+  "start": 18.725,
+  "end": 18.974,
+  "id": "w52"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "xinh",
+  "start": 18.974,
+  "end": 19.224,
+  "id": "w53"
+ },
+ {
+  "line": "decks",
+  "scene": "decks",
+  "text": "xỉu.",
+  "start": 19.224,
+  "end": 19.45,
+  "id": "w54"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "Chọn",
+  "start": 20.4,
+  "end": 20.633,
+  "id": "w55"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "kiểu",
+  "start": 20.633,
+  "end": 20.867,
+  "id": "w56"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "trải,",
+  "start": 20.867,
+  "end": 21.1,
+  "id": "w57"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "rồi",
+  "start": 21.35,
+  "end": 21.564,
+  "id": "w58"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "gửi",
+  "start": 21.564,
+  "end": 21.779,
+  "id": "w59"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "gắm",
+  "start": 21.779,
+  "end": 21.993,
+  "id": "w60"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "tâm",
+  "start": 21.993,
+  "end": 22.208,
+  "id": "w61"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "tư,",
+  "start": 22.208,
+  "end": 22.4,
+  "id": "w62"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "câu",
+  "start": 22.65,
+  "end": 22.832,
+  "id": "w63"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "hỏi",
+  "start": 22.832,
+  "end": 23.015,
+  "id": "w64"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "của",
+  "start": 23.015,
+  "end": 23.198,
+  "id": "w65"
+ },
+ {
+  "line": "ask",
+  "scene": "ask",
+  "text": "bạn.",
+  "start": 23.197,
+  "end": 23.38,
+  "id": "w66"
+ },
+ {
+  "line": "shuffle_a",
+  "scene": "shuffle",
+  "text": "Xáo",
+  "start": 24.31,
+  "end": 24.61,
+  "id": "w67"
+ },
+ {
+  "line": "shuffle_a",
+  "scene": "shuffle",
+  "text": "bài,",
+  "start": 24.61,
+  "end": 24.91,
+  "id": "w68"
+ },
+ {
+  "line": "shuffle_b",
+  "scene": "shuffle",
+  "text": "rút",
+  "start": 25.9,
+  "end": 26.18,
+  "id": "w69"
+ },
+ {
+  "line": "shuffle_b",
+  "scene": "shuffle",
+  "text": "bài,",
+  "start": 26.18,
+  "end": 26.46,
+  "id": "w70"
+ },
+ {
+  "line": "shuffle_c",
+  "scene": "shuffle",
+  "text": "lật",
+  "start": 27.1,
+  "end": 27.39,
+  "id": "w71"
+ },
+ {
+  "line": "shuffle_c",
+  "scene": "shuffle",
+  "text": "bài.",
+  "start": 27.39,
+  "end": 27.68,
+  "id": "w72"
+ },
+ {
+  "line": "shuffle_d",
+  "scene": "shuffle",
+  "text": "Xong!",
+  "start": 28.61,
+  "end": 28.97,
+  "id": "w73"
+ },
+ {
+  "line": "shuffle_d",
+  "scene": "shuffle",
+  "text": "Giờ",
+  "start": 29.2,
+  "end": 29.414,
+  "id": "w74"
+ },
+ {
+  "line": "shuffle_d",
+  "scene": "shuffle",
+  "text": "chỉ",
+  "start": 29.414,
+  "end": 29.629,
+  "id": "w75"
+ },
+ {
+  "line": "shuffle_d",
+  "scene": "shuffle",
+  "text": "cần",
+  "start": 29.629,
+  "end": 29.843,
+  "id": "w76"
+ },
+ {
+  "line": "shuffle_d",
+  "scene": "shuffle",
+  "text": "chờ",
+  "start": 29.843,
+  "end": 30.057,
+  "id": "w77"
+ },
+ {
+  "line": "shuffle_d",
+  "scene": "shuffle",
+  "text": "luận",
+  "start": 30.057,
+  "end": 30.294,
+  "id": "w78"
+ },
+ {
+  "line": "shuffle_d",
+  "scene": "shuffle",
+  "text": "giải.",
+  "start": 30.294,
+  "end": 30.53,
+  "id": "w79"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "Trong",
+  "start": 31.4,
+  "end": 31.641,
+  "id": "w80"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "lúc",
+  "start": 31.641,
+  "end": 31.84,
+  "id": "w81"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "chờ,",
+  "start": 31.84,
+  "end": 32.04,
+  "id": "w82"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "đọc",
+  "start": 32.3,
+  "end": 32.54,
+  "id": "w83"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "ý",
+  "start": 32.54,
+  "end": 32.73,
+  "id": "w84"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "nghĩa",
+  "start": 32.73,
+  "end": 33.02,
+  "id": "w85"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "từng",
+  "start": 33.02,
+  "end": 33.285,
+  "id": "w86"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "lá,",
+  "start": 33.285,
+  "end": 33.5,
+  "id": "w87"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "như",
+  "start": 33.72,
+  "end": 33.96,
+  "id": "w88"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "Ten",
+  "start": 33.96,
+  "end": 34.2,
+  "id": "w89"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "of",
+  "start": 34.2,
+  "end": 34.416,
+  "id": "w90"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "Cups",
+  "start": 34.416,
+  "end": 34.681,
+  "id": "w91"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "hay",
+  "start": 34.681,
+  "end": 34.921,
+  "id": "w92"
+ },
+ {
+  "line": "meanings",
+  "scene": "meanings",
+  "text": "Judgement.",
+  "start": 34.921,
+  "end": 35.31,
+  "id": "w93"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "Luận",
+  "start": 36.25,
+  "end": 36.454,
+  "id": "w94"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "giải",
+  "start": 36.454,
+  "end": 36.658,
+  "id": "w95"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "siêu",
+  "start": 36.658,
+  "end": 36.861,
+  "id": "w96"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "chi",
+  "start": 36.861,
+  "end": 37.046,
+  "id": "w97"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "tiết,",
+  "start": 37.046,
+  "end": 37.25,
+  "id": "w98"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "có",
+  "start": 37.58,
+  "end": 37.746,
+  "id": "w99"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "cả",
+  "start": 37.746,
+  "end": 37.912,
+  "id": "w100"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "voice",
+  "start": 37.912,
+  "end": 38.136,
+  "id": "w101"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "đọc",
+  "start": 38.136,
+  "end": 38.321,
+  "id": "w102"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "cho",
+  "start": 38.321,
+  "end": 38.506,
+  "id": "w103"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "bạn",
+  "start": 38.506,
+  "end": 38.691,
+  "id": "w104"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "nghe",
+  "start": 38.691,
+  "end": 38.896,
+  "id": "w105"
+ },
+ {
+  "line": "reading",
+  "scene": "reading",
+  "text": "luôn.",
+  "start": 38.896,
+  "end": 39.1,
+  "id": "w106"
+ },
+ {
+  "line": "keeper",
+  "scene": "keeper",
+  "text": "Vẫn",
+  "start": 39.75,
+  "end": 39.957,
+  "id": "w107"
+ },
+ {
+  "line": "keeper",
+  "scene": "keeper",
+  "text": "còn",
+  "start": 39.957,
+  "end": 40.164,
+  "id": "w108"
+ },
+ {
+  "line": "keeper",
+  "scene": "keeper",
+  "text": "thắc",
+  "start": 40.164,
+  "end": 40.393,
+  "id": "w109"
+ },
+ {
+  "line": "keeper",
+  "scene": "keeper",
+  "text": "mắc?",
+  "start": 40.393,
+  "end": 40.6,
+  "id": "w110"
+ },
+ {
+  "line": "keeper",
+  "scene": "keeper",
+  "text": "Hỏi",
+  "start": 40.96,
+  "end": 41.248,
+  "id": "w111"
+ },
+ {
+  "line": "keeper",
+  "scene": "keeper",
+  "text": "tiếp",
+  "start": 41.248,
+  "end": 41.566,
+  "id": "w112"
+ },
+ {
+  "line": "keeper",
+  "scene": "keeper",
+  "text": "Keeper",
+  "start": 41.566,
+  "end": 41.944,
+  "id": "w113"
+ },
+ {
+  "line": "keeper",
+  "scene": "keeper",
+  "text": "AI",
+  "start": 41.944,
+  "end": 42.202,
+  "id": "w114"
+ },
+ {
+  "line": "keeper",
+  "scene": "keeper",
+  "text": "nha.",
+  "start": 42.202,
+  "end": 42.49,
+  "id": "w115"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "Lịch",
+  "start": 43.45,
+  "end": 43.695,
+  "id": "w116"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "sử",
+  "start": 43.695,
+  "end": 43.893,
+  "id": "w117"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "xem",
+  "start": 43.893,
+  "end": 44.115,
+  "id": "w118"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "bài",
+  "start": 44.115,
+  "end": 44.337,
+  "id": "w119"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "lưu",
+  "start": 44.337,
+  "end": 44.558,
+  "id": "w120"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "sẵn,",
+  "start": 44.558,
+  "end": 44.78,
+  "id": "w121"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "xem",
+  "start": 45.05,
+  "end": 45.243,
+  "id": "w122"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "lại",
+  "start": 45.243,
+  "end": 45.437,
+  "id": "w123"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "lúc",
+  "start": 45.437,
+  "end": 45.63,
+  "id": "w124"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "nào",
+  "start": 45.63,
+  "end": 45.823,
+  "id": "w125"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "cũng",
+  "start": 45.823,
+  "end": 46.037,
+  "id": "w126"
+ },
+ {
+  "line": "history",
+  "scene": "history",
+  "text": "được.",
+  "start": 46.037,
+  "end": 46.25,
+  "id": "w127"
+ },
+ {
+  "line": "cta",
+  "scene": "cta",
+  "text": "Tải",
+  "start": 47.6,
+  "end": 47.871,
+  "id": "w128"
+ },
+ {
+  "line": "cta",
+  "scene": "cta",
+  "text": "app",
+  "start": 47.871,
+  "end": 48.143,
+  "id": "w129"
+ },
+ {
+  "line": "cta",
+  "scene": "cta",
+  "text": "Ember",
+  "start": 48.143,
+  "end": 48.47,
+  "id": "w130"
+ },
+ {
+  "line": "cta",
+  "scene": "cta",
+  "text": "liền!",
+  "start": 48.47,
+  "end": 48.77,
+  "id": "w131"
+ },
+ {
+  "line": "outro",
+  "scene": "cta",
+  "text": "Lá",
+  "start": 50.6,
+  "end": 50.77,
+  "id": "w132"
+ },
+ {
+  "line": "outro",
+  "scene": "cta",
+  "text": "bài",
+  "start": 50.77,
+  "end": 50.96,
+  "id": "w133"
+ },
+ {
+  "line": "outro",
+  "scene": "cta",
+  "text": "hôm",
+  "start": 50.96,
+  "end": 51.15,
+  "id": "w134"
+ },
+ {
+  "line": "outro",
+  "scene": "cta",
+  "text": "nay,",
+  "start": 51.15,
+  "end": 51.34,
+  "id": "w135"
+ },
+ {
+  "line": "outro",
+  "scene": "cta",
+  "text": "nói",
+  "start": 51.54,
+  "end": 51.75,
+  "id": "w136"
+ },
+ {
+  "line": "outro",
+  "scene": "cta",
+  "text": "gì",
+  "start": 51.75,
+  "end": 51.939,
+  "id": "w137"
+ },
+ {
+  "line": "outro",
+  "scene": "cta",
+  "text": "với",
+  "start": 51.939,
+  "end": 52.15,
+  "id": "w138"
+ },
+ {
+  "line": "outro",
+  "scene": "cta",
+  "text": "bạn?",
+  "start": 52.15,
+  "end": 52.36,
+  "id": "w139"
+ }
+]

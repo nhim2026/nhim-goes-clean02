@@ -1,0 +1,94 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #dk-content { position: absolute; inset: 0; }
+    #dk-head { position: absolute; left: 30px; top: 170px; right: 30px; }
+    #dk-row { position: absolute; left: 30px; top: 300px; height: 520px; display: flex; gap: 24px; }
+    #dk-row .deck { width: 290px; flex: none; }
+    #dk-row .deck .art { width: 290px; height: 440px; border-radius: 24px; background-size: cover; box-shadow: 0 12px 26px rgba(36,48,79,.18); outline: 0 solid #e8c27a; }
+    #dk-row .deck b { display: block; margin-top: 16px; font-size: 26px; font-weight: 900; color: #24304f; }
+    #dk-row .deck span { font-size: 18px; font-weight: 700; color: #5f667c; }
+    #dk-ring1, #dk-ring2 { position: absolute; left: -8px; top: -8px; width: 306px; height: 456px; border-radius: 30px; border: 6px solid #e8c27a; opacity: 0; }
+    #dk-dots { position: absolute; left: 0; right: 0; top: 850px; display: flex; justify-content: center; gap: 10px; }
+    #dk-dots i { width: 12px; height: 12px; border-radius: 6px; background: #c9d0a8; display: block; }
+    #dk-btn { position: absolute; left: 30px; right: 30px; top: 900px; }
+    #dk-wall { position: absolute; inset: 0; background: #fbf7ee; opacity: 0; }
+    #dk-big1 { left: 150px; top: 330px; width: 340px; height: 578px; }
+    #dk-big2 { left: 590px; top: 330px; width: 340px; height: 578px; }
+    #dk-s1 { left: 90px; top: 960px; }
+    #dk-s2 { left: 560px; top: 960px; }
+    #dk-title { position: absolute; left: 0; width: 1080px; top: 186px; text-align: center; font-family: "Playfair Display", serif; font-style: italic; font-weight: 700; font-size: 84px; color: #24304f; }
+    #dk-veil { position: absolute; inset: 0; background: rgba(24, 33, 58, 0.82); opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="decks" data-width="1080" data-height="1920">
+    <div class="bg-cream"></div>
+    <div class="blob" style="left:-160px;top:180px;width:520px;height:520px;background:#e3e7cc"></div>
+    <div class="blob" style="left:700px;top:1100px;width:560px;height:560px;background:#efd9cf;opacity:.6"></div>
+    <div id="dk-stage" class="stage">
+      <div class="phone">
+        <div class="screen">
+          <div class="island"></div>
+          <div class="statusbar"><span>9:41</span><span>● ● ●</span></div>
+          <div id="dk-content">
+            <div class="ui-back"></div>
+            <div id="dk-head"><div class="ui-h1">Chọn bộ bài</div><div class="ui-sub">Hợp vibe của bạn hôm nay</div></div>
+            <div id="dk-row">
+              <div class="deck"><div class="art" style="background-image:url(assets/art/back-classic.svg)"></div><div id="dk-ring1"></div><b>Rider-Waite</b><br /><span>Cổ điển, kinh điển</span></div>
+              <div class="deck"><div class="art" style="background-image:url(assets/art/back-flora.svg)"></div><div id="dk-ring2"></div><b>Hoa & Bướm</b><br /><span>Mặt sau minh họa</span></div>
+              <div class="deck" style="opacity:.5"><div class="art" style="background:#e3e7cc"></div><b>Bộ khác</b></div>
+            </div>
+            <div id="dk-dots"><i id="dk-d1" style="background:#24304f;width:30px"></i><i id="dk-d2"></i><i></i></div>
+            <div id="dk-btn" class="ui-btn">Dùng bộ bài này</div>
+          </div>
+          <div id="dk-wall"></div>
+        </div>
+      </div>
+    </div>
+    <div id="dk-veil"></div>
+    <canvas id="dk-fx" class="fx-canvas" width="1080" height="1920"></canvas>
+    <div class="tcard" id="dk-big1"><div class="inner"><div class="face back back-classic"></div><div class="face front"><img src="assets/cards/lovers.jpg" alt="" /></div></div></div>
+    <div class="tcard" id="dk-big2"><div class="inner"><div class="face back back-flora"></div><div class="face front back-flora"></div></div></div>
+    <div id="dk-s1" class="sticker navy" data-layout-allow-overlap data-layout-allow-occlusion>Rider-Waite</div>
+    <div id="dk-s2" class="sticker blush" data-layout-allow-overlap data-layout-allow-occlusion>Hoa bướm xinh xỉu</div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      const bursts = [{ t: 1.62, x: 320, y: 620, n: 24, seed: 62 }, { t: 3.55, x: 760, y: 620, n: 28, seed: 63, colors: ["#F2B8B5", "#C9D0A8", "#E8C27A", "#fff"] }];
+      const field = EF.starfield(document.getElementById("dk-fx"), { n: 70, seed: 61, big: 8 });
+      EF.drive(tl, 5, (t) => field(t, bursts));
+      tl.fromTo("#dk-fx", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 1.1);
+      tl.to("#dk-fx", { opacity: 0, duration: 0.3 }, 4.4);
+
+      tl.fromTo("#dk-content", { x: 510, opacity: 1 }, { x: 0, duration: 0.4, ease: "power3.out" }, 0);
+            tl.to("#dk-ring1", { opacity: 1, duration: 0.15 }, 0.9);
+
+      // Rider-Waite card leaps out of the phone and flips
+      tl.to("#dk-veil", { opacity: 1, duration: 0.3, ease: "power2.out" }, 1.05);
+      tl.set("#dk-big2", { opacity: 0 }, 0);
+      tl.fromTo("#dk-big1", { x: 40, y: 80, scale: 0.6, rotation: -6, opacity: 0 }, { x: 0, y: 0, scale: 1, rotation: -6, opacity: 1, duration: 0.45, ease: "back.out(1.5)" }, 1.05);
+      tl.fromTo("#dk-big1 .inner", { rotationY: 0 }, { rotationY: 180, duration: 0.5, ease: "back.out(1.4)" }, 1.5);
+      tl.fromTo("#dk-s1", { scale: 0, rotation: -18 }, { scale: 1, rotation: -6, duration: 0.35, ease: "back.out(2.5)" }, 1.62);
+
+      // swipe: carousel moves to Hoa & Bướm, flora card spins in
+      tl.to("#dk-row", { x: -314, duration: 0.45, ease: "power3.inOut" }, 2.8);
+      tl.to("#dk-ring1", { opacity: 0, duration: 0.1 }, 2.8);
+      tl.to("#dk-ring2", { opacity: 1, duration: 0.15 }, 3.2);
+      tl.to("#dk-d1", { width: 12, backgroundColor: "#c9d0a8", duration: 0.2 }, 2.9);
+      tl.to("#dk-d2", { width: 30, backgroundColor: "#24304f", duration: 0.2 }, 2.9);
+      tl.to("#dk-big1", { x: -40, y: 40, scale: 0.86, rotation: -12, duration: 0.5, ease: "power3.inOut" }, 2.8);
+      tl.to("#dk-s1", { x: -20, y: 20, scale: 0.8, duration: 0.5, ease: "power3.inOut" }, 2.8);
+      tl.fromTo("#dk-big2", { x: 600, y: -100, rotation: 40, opacity: 0 }, { x: 0, y: 0, rotation: 6, opacity: 1, duration: 0.6, ease: "back.out(1.3)" }, 2.85);
+      tl.fromTo("#dk-big2 .inner", { rotationY: -360 }, { rotationY: 0, duration: 0.7, ease: "power3.out" }, 2.85);
+      tl.fromTo("#dk-s2", { scale: 0, rotation: 18 }, { scale: 1, rotation: 5, duration: 0.35, ease: "back.out(2.5)" }, 3.6);
+
+      // cards dive back into the phone, screen pushes on
+      tl.to(["#dk-big1", "#dk-big2"], { x: (i) => [120, -120][i], y: 160, scale: 0.2, opacity: 0, rotation: 0, duration: 0.4, ease: "power3.in", stagger: 0.05 }, 4.35);
+      tl.to(["#dk-s1", "#dk-s2"], { scale: 0, opacity: 0, duration: 0.2, ease: "power3.in" }, 4.3);
+      tl.to("#dk-veil", { opacity: 0, duration: 0.3 }, 4.4);
+      tl.to("#dk-content", { x: -510, filter: "blur(6px)", duration: 0.3, ease: "power3.in" }, 4.65);
+      tl.to("#dk-wall", { opacity: 1, duration: 0.15, ease: "power2.in" }, 4.8);
+      window.__timelines["decks"] = tl;
+    })();
+  </script>
+</template>

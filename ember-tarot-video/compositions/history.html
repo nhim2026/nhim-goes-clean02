@@ -1,0 +1,65 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #hs-stage { transform-origin: 540px 760px; }
+    #hs-content { position: absolute; inset: 0; }
+    #hs-head { position: absolute; left: 30px; top: 110px; right: 30px; }
+    #hs-list { position: absolute; left: 24px; right: 24px; top: 230px; display: flex; flex-direction: column; gap: 14px; }
+    .hs-it { height: 140px; display: flex; align-items: center; gap: 16px; padding: 0 18px; }
+    .hs-d { width: 74px; height: 92px; border-radius: 18px; background: #e3e7cc; display: flex; flex-direction: column; align-items: center; justify-content: center; flex: none; }
+    .hs-d b { font-size: 30px; font-weight: 900; line-height: 1; }
+    .hs-d span { font-size: 15px; font-weight: 800; color: #5f667c; }
+    .hs-t { flex: 1; }
+    .hs-t b { display: block; font-size: 22px; font-weight: 900; }
+    .hs-t span { font-size: 17px; font-weight: 700; color: #5f667c; }
+    .hs-m { display: flex; gap: 3px; }
+    .hs-m i { width: 30px; height: 52px; border-radius: 4px; background-size: cover; display: block; }
+    #hs-s { left: 600px; top: 196px; }
+    #hs-flood { position: absolute; inset: 0; background: #1d2741; }
+  </style>
+  <div id="root" data-composition-id="history" data-width="1080" data-height="1920">
+    <div class="bg-cream"></div>
+    <div class="blob" style="left:-160px;top:180px;width:520px;height:520px;background:#e3e7cc"></div>
+    <div class="blob" style="left:700px;top:1100px;width:560px;height:560px;background:#efd9cf;opacity:.6"></div>
+    <div id="hs-stage" class="stage">
+      <div class="phone">
+        <div class="screen">
+          <div class="island"></div>
+          <div id="hs-content">
+            <div id="hs-head"><div class="ui-h1">Lịch sử xem bài</div><div class="ui-sub">Xem lại bất cứ lúc nào</div></div>
+            <div id="hs-list">
+              <div class="hs-it ui-card" id="hs-i0"><div class="hs-d"><b>12</b><span>TH 11</span></div><div class="hs-t"><b>Ba lá · Tình cảm</b><span>Tháng này chuyện tình cảm...</span></div><div class="hs-m"><i style="background-image:url(assets/cards/ten-of-cups.jpg)"></i><i style="background-image:url(assets/cards/judgement.jpg)"></i><i style="background-image:url(assets/cards/star.jpg)"></i></div></div>
+              <div class="hs-it ui-card" id="hs-i1"><div class="hs-d" style="background:#f6dcd6"><b>08</b><span>TH 11</span></div><div class="hs-t"><b>Một lá</b><span>Thông điệp cho hôm nay</span></div><div class="hs-m"><i style="background-image:url(assets/cards/sun.jpg)"></i></div></div>
+              <div class="hs-it ui-card" id="hs-i2"><div class="hs-d"><b>03</b><span>TH 11</span></div><div class="hs-t"><b>Nhịp tuần</b><span>Tuần mới của mình...</span></div><div class="hs-m"><i style="background-image:url(assets/cards/moon.jpg)"></i><i style="background-image:url(assets/cards/lovers.jpg)"></i></div></div>
+              <div class="hs-it ui-card" id="hs-i3"><div class="hs-d" style="background:#f6dcd6"><b>28</b><span>TH 10</span></div><div class="hs-t"><b>Gương kết nối</b><span>Mình và người ấy</span></div><div class="hs-m"><i style="background-image:url(assets/cards/lovers.jpg)"></i><i style="background-image:url(assets/cards/star.jpg)"></i></div></div>
+              <div class="hs-it ui-card" id="hs-i4"><div class="hs-d"><b>21</b><span>TH 10</span></div><div class="hs-t"><b>Lời khuyên</b><span>Có nên đổi việc?</span></div><div class="hs-m"><i style="background-image:url(assets/cards/sun.jpg)"></i></div></div>
+            </div>
+          </div>
+          <div class="tabbar"><div class="tab"><i></i>Trang chủ</div><div class="tab"><i></i>Tử vi</div><div class="tab on"><i></i>Tarot</div><div class="tab"><i></i>Thần số</div><div class="tab"><i></i>Tôi</div></div>
+        </div>
+      </div>
+    </div>
+    <div id="hs-s" class="sticker blush" data-layout-allow-overlap data-layout-allow-occlusion>Lưu lại hết!</div>
+    <canvas id="hs-fx" class="fx-canvas" width="1080" height="1920"></canvas>
+    <div id="hs-flood"></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      const fx = EF.starfield(document.getElementById("hs-fx"), { n: 0, big: 0, seed: 1 });
+      EF.drive(tl, 4, (t) => fx(t, [{ t: 0.95, x: 760, y: 240, n: 18, spread: 200, seed: 101 }]));
+      tl.fromTo("#hs-content", { x: 510 }, { x: 0, duration: 0.35, ease: "power3.out" }, 0);
+      tl.fromTo(".hs-it", { x: 200, opacity: 0 }, { x: 0, opacity: 1, duration: 0.4, ease: "back.out(1.4)", stagger: 0.1 }, 0.3);
+      tl.fromTo("#hs-s", { scale: 0, rotation: 20 }, { scale: 1, rotation: 5, duration: 0.4, ease: "back.out(2.5)" }, 0.9);
+      // "xem lại": punch in on the first reading
+      tl.to("#hs-stage", { scale: 1.3, y: 60, duration: 0.6, ease: "power2.inOut" }, 1.9);
+      tl.fromTo("#hs-i0", { scale: 1 }, { scale: 1.06, duration: 0.3, ease: "back.out(3)" }, 2.1);
+      tl.to("#hs-s", { y: -20, scale: 0.8, duration: 0.4, ease: "power3.inOut" }, 1.9);
+      // night falls for the finale
+      tl.to("#hs-s", { scale: 0, opacity: 0, duration: 0.2, ease: "power3.in" }, 3.4);
+      tl.to("#hs-stage", { scale: 0.7, y: -300, opacity: 0, duration: 0.45, ease: "power3.in" }, 3.5);
+      tl.fromTo("#hs-flood", { clipPath: "circle(0px at 540px 1920px)" }, { clipPath: "circle(2300px at 540px 1920px)", duration: 0.5, ease: "power3.in" }, 3.5);
+      window.__timelines["history"] = tl;
+    })();
+  </script>
+</template>

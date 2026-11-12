@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+  <defs>
+    <g id="fl"><circle r="9" fill="#F2B8B5"/><circle cx="0" cy="-11" r="8" fill="#F6CFCB"/><circle cx="10" cy="-4" r="8" fill="#F6CFCB"/><circle cx="7" cy="9" r="8" fill="#F6CFCB"/><circle cx="-7" cy="9" r="8" fill="#F6CFCB"/><circle cx="-10" cy="-4" r="8" fill="#F6CFCB"/><circle r="5" fill="#E8C27A"/></g>
+    <g id="bf"><path d="M0 0 C-14 -22 -34 -14 -26 2 C-34 14 -16 24 0 6Z" fill="#A9B38A"/><path d="M0 0 C14 -22 34 -14 26 2 C34 14 16 24 0 6Z" fill="#C9D0A8"/><path d="M0 -8 L0 10" stroke="#24304F" stroke-width="3" stroke-linecap="round"/><path d="M0 -8 L-6 -18 M0 -8 L6 -18" stroke="#24304F" stroke-width="1.6" stroke-linecap="round"/></g>
+    <g id="lf"><path d="M0 0 C8 -10 20 -10 26 0 C20 10 8 10 0 0Z" fill="#8E9A6B"/></g>
+  </defs>
+  <rect width="300" height="500" rx="22" fill="#FBF6EA"/>
+  <rect x="12" y="12" width="276" height="476" rx="16" fill="#F5EEDC" stroke="#A9B38A" stroke-width="3"/>
+  <path d="M40 470 C70 380 40 300 90 230 C140 160 110 90 150 40" fill="none" stroke="#8E9A6B" stroke-width="3"/>
+  <path d="M260 30 C230 120 260 200 210 270 C160 340 190 410 150 460" fill="none" stroke="#8E9A6B" stroke-width="3"/>
+  <use href="#lf" transform="translate(58 400) rotate(-50)"/><use href="#lf" transform="translate(78 260) rotate(-130) scale(.9)"/>
+  <use href="#lf" transform="translate(128 120) rotate(-40)"/><use href="#lf" transform="translate(240 100) rotate(140)"/>
+  <use href="#lf" transform="translate(222 250) rotate(40)"/><use href="#lf" transform="translate(176 400) rotate(150)"/>
+  <use href="#fl" transform="translate(150 250) scale(2.2)"/>
+  <use href="#fl" transform="translate(86 330) scale(1.2)"/><use href="#fl" transform="translate(214 170) scale(1.2)"/>
+  <use href="#fl" transform="translate(150 42) scale(.9)"/><use href="#fl" transform="translate(150 460) scale(.9)"/>
+  <use href="#bf" transform="translate(82 140) rotate(-18) scale(1.3)"/>
+  <use href="#bf" transform="translate(222 360) rotate(16) scale(1.3)"/>
+  <use href="#bf" transform="translate(236 452) rotate(-10) scale(.7)"/>
+  <circle cx="60" cy="60" r="3" fill="#E8C27A"/><circle cx="244" cy="300" r="3" fill="#E8C27A"/><circle cx="110" cy="440" r="3" fill="#E8C27A"/>
+</svg>

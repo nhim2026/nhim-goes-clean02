@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- PLACEHOLDER mark: replace with Ember's real logo file -->
+  <rect width="200" height="200" rx="48" fill="#24304F"/>
+  <path d="M100 34 C122 70 150 84 146 122 C143 152 122 168 100 168 C78 168 57 152 54 122 C51 96 70 84 76 62 C86 78 92 84 100 86 C98 66 96 52 100 34Z" fill="#E8C27A"/>
+  <path d="M100 98 L106 118 L126 124 L106 130 L100 150 L94 130 L74 124 L94 118Z" fill="#24304F"/>
+</svg>

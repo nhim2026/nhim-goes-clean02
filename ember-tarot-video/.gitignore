@@ -1,0 +1,4 @@
+.hyperframes/
+node_modules/
+assets/audio/vo_lines/*.raw.*
+assets/audio/*.raw.*

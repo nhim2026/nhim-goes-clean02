@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 500">
+  <defs>
+    <pattern id="p" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M15 5 L17 13 L25 15 L17 17 L15 25 L13 17 L5 15 L13 13Z" fill="#E8C27A" opacity=".22"/>
+    </pattern>
+    <radialGradient id="g" cx=".5" cy=".5" r=".6"><stop offset="0" stop-color="#2C3A5E"/><stop offset="1" stop-color="#18213A"/></radialGradient>
+  </defs>
+  <rect width="300" height="500" rx="22" fill="#F4EBD6"/>
+  <rect x="10" y="10" width="280" height="480" rx="16" fill="url(#g)"/>
+  <rect x="10" y="10" width="280" height="480" rx="16" fill="url(#p)"/>
+  <rect x="22" y="22" width="256" height="456" rx="10" fill="none" stroke="#E8C27A" stroke-width="3"/>
+  <rect x="30" y="30" width="240" height="440" rx="6" fill="none" stroke="#E8C27A" stroke-width="1.2" opacity=".7"/>
+  <circle cx="150" cy="250" r="62" fill="none" stroke="#E8C27A" stroke-width="3"/>
+  <circle cx="150" cy="250" r="48" fill="#E8C27A" opacity=".15"/>
+  <g stroke="#E8C27A" stroke-width="3" stroke-linecap="round">
+    <line x1="150" y1="160" x2="150" y2="176"/><line x1="150" y1="324" x2="150" y2="340"/>
+    <line x1="60" y1="250" x2="76" y2="250"/><line x1="224" y1="250" x2="240" y2="250"/>
+    <line x1="86" y1="186" x2="98" y2="198"/><line x1="202" y1="302" x2="214" y2="314"/>
+    <line x1="214" y1="186" x2="202" y2="198"/><line x1="98" y1="302" x2="86" y2="314"/>
+  </g>
+  <path d="M165 222 A34 34 0 1 0 165 278 A27 27 0 1 1 165 222Z" fill="#F4EBD6"/>
+  <path d="M150 70 L156 88 L174 94 L156 100 L150 118 L144 100 L126 94 L144 88Z" fill="#E8C27A"/>
+  <path d="M150 382 L156 400 L174 406 L156 412 L150 430 L144 412 L126 406 L144 400Z" fill="#E8C27A"/>
+</svg>

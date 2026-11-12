@@ -1,0 +1,90 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #ct-brand { position: absolute; left: 0; top: 330px; width: 1080px; display: flex; flex-direction: column; align-items: center; }
+    #ct-mark { width: 230px; height: 230px; }
+    #ct-word { margin-top: 18px; font-family: "Playfair Display", serif; font-weight: 700; font-size: 128px; line-height: 1; color: #f6efdf; letter-spacing: 1px; }
+    #ct-tag { margin-top: 14px; font-family: "Nunito", sans-serif; font-weight: 800; font-size: 34px; color: #c9d0a8; letter-spacing: 2px; }
+    #ct-cta { position: absolute; left: 0; top: 960px; width: 1080px; text-align: center; font-family: "Nunito", sans-serif; font-weight: 900; font-size: 92px; line-height: 1.05; color: #e8c27a; }
+    #ct-cta span { display: inline-block; }
+    #ct-rate { position: absolute; left: 290px; top: 1110px; width: 500px; height: 96px; border-radius: 48px; background: #f6efdf; display: flex; align-items: center; justify-content: center; gap: 16px; font-family: "Nunito", sans-serif; font-weight: 900; font-size: 44px; color: #24304f; }
+    #ct-stars { position: relative; width: 250px; height: 46px; }
+    #ct-stars svg { position: absolute; left: 0; top: 0; width: 250px; height: 46px; }
+    #ct-fill { position: absolute; left: 0; top: 0; width: 250px; height: 46px; overflow: hidden; transform-origin: 0 50%; }
+    #ct-card { left: 390px; top: 425px; width: 300px; height: 510px; }
+    #ct-glow { position: absolute; left: 240px; top: 380px; width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(circle, rgba(232,194,122,.45), rgba(232,194,122,0) 65%); }
+    #ct-q { position: absolute; left: 90px; top: 965px; width: 900px; text-align: center; font-family: "Playfair Display", serif; font-style: italic; font-weight: 700; font-size: 66px; line-height: 1.2; color: #f6efdf; }
+    #ct-q .qw { display: inline-block; }
+    #ct-cat { left: 380px; top: 1350px; width: 320px; height: 380px; }
+  </style>
+  <div id="root" data-composition-id="cta" data-width="1080" data-height="1920">
+    <div class="bg-navy"></div>
+    <canvas id="ct-fx" class="fx-canvas" width="1080" height="1920"></canvas>
+    <div id="ct-glow"></div>
+    <div id="ct-brand">
+      <img id="ct-mark" src="assets/art/ember-logo.svg" alt="Ember" />
+      <div id="ct-word">Ember</div>
+      <div id="ct-tag">TỬ VI · TAROT · THẦN SỐ</div>
+    </div>
+    <div id="ct-cta"><span>Tải</span> <span>app</span> <span>Ember</span> <span>liền!!!</span></div>
+    <div id="ct-rate"><span id="ct-num" data-var-text="rating">4.8</span>
+      <div id="ct-stars">
+        <svg viewBox="0 0 250 46"><g fill="#C9D0A8"><path id="ct-st" d="M23 2l6 14 15 1-11 10 3 15-13-8-13 8 3-15L1 17l15-1z"/><use href="#ct-st" x="51"/><use href="#ct-st" x="102"/><use href="#ct-st" x="153"/><use href="#ct-st" x="204"/></g></svg>
+        <div id="ct-fill"><svg viewBox="0 0 250 46"><g fill="#E8C27A"><path id="ct-st2" d="M23 2l6 14 15 1-11 10 3 15-13-8-13 8 3-15L1 17l15-1z"/><use href="#ct-st2" x="51"/><use href="#ct-st2" x="102"/><use href="#ct-st2" x="153"/><use href="#ct-st2" x="204"/></g></svg></div>
+      </div>
+    </div>
+    <div class="tcard" id="ct-card"><div class="inner"><div class="face back back-flora"></div><div class="face front"><img src="assets/cards/star.jpg" alt="" /></div></div></div>
+    <div id="ct-q"><span class="qw">Lá</span> <span class="qw">bài</span> <span class="qw">hôm</span> <span class="qw">nay</span><br /><span class="qw">nói</span> <span class="qw">gì</span> <span class="qw">với</span> <span class="qw">bạn?</span></div>
+    <div id="ct-cat" class="cat-host" data-layout-allow-overflow></div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      const cat = EF.mountCat(document.getElementById("ct-cat"));
+      const fx = EF.starfield(document.getElementById("ct-fx"), { n: 160, seed: 121, big: 14 });
+      const bursts = [
+        { t: 0.6, x: 540, y: 445, n: 34, spread: 420, seed: 122, size: 20 },
+        { t: 1.55, x: 540, y: 1158, n: 20, spread: 300, seed: 123 },
+        { t: 3.35, x: 540, y: 680, n: 30, spread: 360, seed: 124 },
+      ];
+      EF.drive(tl, 7.5, (t) => fx(t, bursts));
+
+      // logo performed in: drops, squashes, settles
+      tl.fromTo("#ct-mark", { y: -700, scale: 0.6, rotation: -30 }, { y: 0, scale: 1, rotation: 0, duration: 0.55, ease: "back.out(1.5)" }, 0.05);
+      tl.fromTo("#ct-mark", { scaleY: 1 }, { scaleY: 0.86, scaleX: 1.1, duration: 0.08, ease: "power2.out", yoyo: true, repeat: 1 }, 0.58);
+      tl.fromTo("#ct-word", { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 0.4, ease: "power3.out" }, 0.62);
+      tl.fromTo("#ct-tag", { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0.9);
+      // CTA, word by word on the voice
+      [0.6, 0.87, 1.14, 1.47].forEach((t, i) => {
+        tl.fromTo("#ct-cta span:nth-child(" + (i + 1) + ")", { scale: 0, y: 40 }, { scale: 1, y: 0, duration: 0.3, ease: "back.out(2.6)" }, t);
+      });
+      tl.fromTo("#ct-rate", { scale: 0, rotation: -8 }, { scale: 1, rotation: 0, duration: 0.4, ease: "back.out(2)" }, 1.55);
+      tl.fromTo("#ct-fill", { scaleX: 0 }, { scaleX: 0.96, duration: 0.6, ease: "power2.out" }, 1.7);
+
+      // cat waves
+      tl.fromTo("#ct-cat", { y: 520 }, { y: 0, duration: 0.45, ease: "back.out(1.6)" }, 0.9);
+      tl.fromTo(cat.armR, { rotation: 0 }, { rotation: -110, duration: 0.3, ease: "back.out(2)" }, 1.2);
+      tl.to(cat.armR, { rotation: -80, duration: 0.16, ease: "sine.inOut", yoyo: true, repeat: 5 }, 1.5);
+      tl.to(cat.armR, { rotation: 0, duration: 0.3, ease: "power2.inOut" }, 2.6);
+      EF.catBlink(tl, cat, [2.0, 4.6]);
+
+      // calm: the brand rises, a single card descends and turns
+      tl.to("#ct-brand", { y: -262, scale: 0.42, duration: 0.6, ease: "power3.inOut" }, 2.75);
+      tl.to("#ct-cta", { y: 190, scale: 0.55, duration: 0.6, ease: "power3.inOut" }, 2.75);
+      tl.to("#ct-rate", { y: 100, scale: 0.7, duration: 0.6, ease: "power3.inOut" }, 2.75);
+      tl.fromTo("#ct-card", { y: -900, rotation: -10, opacity: 1 }, { y: 0, rotation: 0, duration: 0.7, ease: "power3.out" }, 2.75);
+      tl.fromTo("#ct-card .inner", { rotationY: 0 }, { rotationY: 180, duration: 0.9, ease: "power2.inOut" }, 3.2);
+      tl.fromTo("#ct-glow", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 1.2, ease: "power2.out" }, 3.2);
+      tl.to(cat.pupils, { y: -12, duration: 0.5, ease: "power2.inOut" }, 3.0);
+      tl.to(cat.head, { rotation: -6, duration: 0.8, ease: "sine.inOut" }, 3.0);
+      tl.to("#ct-cat", { y: 160, duration: 0.6, ease: "power3.inOut" }, 2.75);
+      // the soft question, word by word from light to full
+      document.querySelectorAll("#ct-q .qw").forEach((w, i) => {
+        const t = [3.6, 3.77, 3.96, 4.15, 4.54, 4.75, 4.94, 5.15][i];
+        tl.fromTo(w, { opacity: 0, filter: "blur(6px)" }, { opacity: 1, filter: "blur(0px)", duration: 0.35, ease: "power2.out" }, t);
+      });
+      tl.set("#ct-q", { opacity: 1 }, 0);
+      window.__timelines["cta"] = tl;
+    })();
+  </script>
+</template>

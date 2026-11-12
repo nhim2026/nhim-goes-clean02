@@ -1,0 +1,97 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; overflow: hidden; }
+    #sp-stage { transform-origin: 540px 960px; }
+    #sp-content { position: absolute; inset: 0; }
+    #sp-head { position: absolute; left: 30px; top: 170px; right: 30px; }
+    #sp-grid { position: absolute; left: 26px; right: 26px; top: 300px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    #sp-grid .sp { position: relative; height: 175px; border-radius: 26px; background: #fff; box-shadow: 0 6px 16px rgba(36,48,79,.08); padding: 16px 18px; display: flex; flex-direction: column; justify-content: flex-end; }
+    #sp-grid .sp .bgc { position: absolute; inset: 0; border-radius: 26px; background: #24304f; opacity: 0; }
+    #sp-grid .sp svg { position: absolute; left: 18px; top: 16px; width: 120px; height: 70px; }
+    #sp-grid .sp b { position: relative; font-size: 24px; font-weight: 900; color: #24304f; }
+    #sp-grid .sp span { position: relative; font-size: 17px; font-weight: 700; color: #5f667c; }
+    #sp-sticker { left: 610px; top: 196px; font-size: 64px; }
+    #sp-sticker em { font-family: "Playfair Display", serif; font-style: italic; color: #24304f; font-size: 84px; }
+    #sp-wall { position: absolute; inset: 0; background: #fbf7ee; opacity: 0; }
+  </style>
+  <div id="root" data-composition-id="spreads" data-width="1080" data-height="1920">
+    <div class="bg-cream"></div>
+    <div class="blob" style="left:-160px;top:180px;width:520px;height:520px;background:#e3e7cc"></div>
+    <div class="blob" style="left:700px;top:1100px;width:560px;height:560px;background:#efd9cf;opacity:.6"></div>
+    <canvas id="sp-fx" class="fx-canvas" width="1080" height="1920"></canvas>
+    <div id="sp-stage" class="stage" data-layout-allow-overflow>
+      <div class="phone">
+        <div class="screen">
+          <div class="island"></div>
+          <div class="statusbar"><span>9:41</span><span>● ● ●</span></div>
+          <div id="sp-content">
+            <div class="ui-back"></div>
+            <div id="sp-head"><div class="ui-h1">Chọn trải bài</div><div class="ui-sub">Mỗi nỗi niềm, một cách trải</div></div>
+            <div id="sp-grid">
+              <div class="sp" id="sp-0"><div class="bgc"></div><svg viewBox="0 0 120 70"><rect x="48" y="4" width="26" height="42" rx="5" fill="#C9D0A8"/></svg><b>Một lá</b><span>Thông điệp nhanh</span></div>
+              <div class="sp" id="sp-1"><div class="bgc"></div><svg viewBox="0 0 120 70"><rect x="14" y="4" width="26" height="42" rx="5" fill="#C9D0A8"/><rect x="47" y="4" width="26" height="42" rx="5" fill="#8E9A6B"/><rect x="80" y="4" width="26" height="42" rx="5" fill="#C9D0A8"/></svg><b>Ba lá</b><span>Quá khứ · Hiện tại · Tương lai</span></div>
+              <div class="sp" id="sp-2"><div class="bgc"></div><svg viewBox="0 0 120 70"><rect x="20" y="4" width="26" height="42" rx="5" fill="#F2B8B5"/><rect x="74" y="4" width="26" height="42" rx="5" fill="#F2B8B5"/><path d="M60 22 c-6 -10 -18 -2 -10 8 l10 10 l10 -10 c8 -10 -4 -18 -10 -8z" fill="#E59A97"/></svg><b>Tình cảm</b><span>Chuyện hai ta</span></div>
+              <div class="sp" id="sp-3"><div class="bgc"></div><svg viewBox="0 0 120 70"><g fill="#C9D0A8"><rect x="2" y="12" width="14" height="24" rx="3"/><rect x="19" y="12" width="14" height="24" rx="3"/><rect x="36" y="12" width="14" height="24" rx="3"/><rect x="53" y="12" width="14" height="24" rx="3" fill="#8E9A6B"/><rect x="70" y="12" width="14" height="24" rx="3"/><rect x="87" y="12" width="14" height="24" rx="3"/><rect x="104" y="12" width="14" height="24" rx="3"/></g></svg><b>Nhịp tuần</b><span>7 ngày, 7 lá</span></div>
+              <div class="sp" id="sp-4"><div class="bgc"></div><svg viewBox="0 0 120 70"><rect x="16" y="4" width="26" height="42" rx="5" fill="#C9D0A8"/><rect x="78" y="4" width="26" height="42" rx="5" fill="#C9D0A8"/><path d="M48 25 h24" stroke="#8E9A6B" stroke-width="4" stroke-dasharray="4 4"/><circle cx="60" cy="25" r="5" fill="#E8C27A"/></svg><b>Gương kết nối</b><span>Bạn & người ấy</span></div>
+              <div class="sp" id="sp-5"><div class="bgc"></div><svg viewBox="0 0 120 70"><rect x="47" y="0" width="22" height="34" rx="4" fill="#C9D0A8"/><rect x="47" y="36" width="22" height="34" rx="4" fill="#C9D0A8"/><rect x="20" y="18" width="22" height="34" rx="4" fill="#8E9A6B"/><rect x="74" y="18" width="22" height="34" rx="4" fill="#8E9A6B"/></svg><b>Công việc</b><span>Định hướng sự nghiệp</span></div>
+              <div class="sp" id="sp-6"><div class="bgc"></div><svg viewBox="0 0 120 70"><rect x="30" y="4" width="26" height="42" rx="5" fill="#E8C27A"/><rect x="64" y="4" width="26" height="42" rx="5" fill="#C9D0A8"/></svg><b>Lời khuyên</b><span>Nên hay không nên</span></div>
+              <div class="sp" id="sp-7"><div class="bgc"></div><svg viewBox="0 0 120 70"><rect x="40" y="4" width="40" height="42" rx="8" fill="none" stroke="#8E9A6B" stroke-width="4" stroke-dasharray="6 5"/><path d="M60 15 v20 M50 25 h20" stroke="#24304F" stroke-width="4" stroke-linecap="round"/></svg><b>Tùy chọn</b><span>Tự đặt số lá</span></div>
+            </div>
+          </div>
+          <div id="sp-wall"></div>
+        </div>
+      </div>
+    </div>
+    <div id="sp-sticker" class="sticker" data-layout-allow-overlap data-layout-allow-occlusion><em>8</em> trải bài</div>
+  </div>
+  <script>
+    (function () {
+      const tl = gsap.timeline({ paused: true });
+      const fx = EF.starfield(document.getElementById("sp-fx"), { n: 40, seed: 41, big: 6, colors: ["#E8C27A", "#C9D0A8", "#F2B8B5"], alpha: 0.8 });
+      // highlight order follows the voice: một lá, ba lá, tình cảm, nhịp tuần, gương kết nối, tùy chọn
+      const hits = [[0, 2.13], [1, 2.9], [2, 3.66], [3, 4.35], [4, 5.11], [7, 6.19]];
+      const bursts = [{ t: 0.4, x: 230, y: 300, n: 16, spread: 200, seed: 51 }];
+      // canvas y of each tile centre (unscaled), for the camera
+      const tileY = (i) => 205 + 300 + Math.floor(i / 2) * 189 + 87;
+      const tileX = (i) => (i % 2 ? 680 : 405);
+      EF.drive(tl, 7.5, (t) => fx(t, bursts));
+
+      tl.fromTo("#sp-content", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 0);
+      tl.fromTo("#sp-grid .sp", { y: 60, opacity: 0, scale: 0.9 }, { y: 0, opacity: 1, scale: 1, duration: 0.45, ease: "back.out(1.6)", stagger: 0.05 }, 0.12);
+      tl.fromTo("#sp-sticker", { scale: 0, rotation: 20 }, { scale: 1, rotation: 5, duration: 0.45, ease: "back.out(2.5)" }, 0.38);
+      tl.to("#sp-sticker", { x: 40, y: -10, scale: 0.8, duration: 0.5, ease: "power3.inOut" }, 1.9);
+
+      // camera rides down the grid with the voice
+      const cam = (i, t, d) => {
+        const s = 1.32, Y = tileY(i);
+        tl.to("#sp-stage", { scale: s, y: 760 - (960 + (Y - 960) * s), x: (540 - tileX(i)) * 0.35, duration: d || 0.5, ease: "power2.inOut" }, t);
+      };
+      cam(0, 1.7, 0.5); cam(2, 3.45, 0.5); cam(4, 4.9, 0.5); cam(7, 5.95, 0.5);
+      tl.to("#sp-stage", { scale: 1, x: 0, y: 0, duration: 0.5, ease: "power2.inOut" }, 6.75);
+
+      let prev = null;
+      hits.forEach(([i, t]) => {
+        const el = "#sp-" + i;
+        if (prev) {
+          tl.to(prev + " .bgc", { opacity: 0, duration: 0.15 }, t - 0.02);
+          tl.to(prev + " b", { color: "#24304f", duration: 0.15 }, t - 0.02);
+          tl.to(prev, { scale: 1, duration: 0.2, ease: "power2.out" }, t - 0.02);
+        }
+        tl.to(el + " .bgc", { opacity: 1, duration: 0.12 }, t);
+        tl.to(el + " b", { color: "#f6efdf", duration: 0.12 }, t);
+        tl.fromTo(el, { scale: 1 }, { scale: 1.1, duration: 0.3, ease: "back.out(3)" }, t);
+        prev = el;
+      });
+      tl.to("#sp-1 .bgc", { opacity: 1, duration: 0.12 }, 6.9);
+      tl.to("#sp-1 b", { color: "#f6efdf", duration: 0.12 }, 6.9);
+      tl.to("#sp-7 .bgc", { opacity: 0, duration: 0.12 }, 6.9);
+      tl.to("#sp-7 b", { color: "#24304f", duration: 0.12 }, 6.9);
+      tl.to("#sp-7", { scale: 1, duration: 0.2 }, 6.9);
+      // push to the next screen
+      tl.to("#sp-sticker", { scale: 0, opacity: 0, duration: 0.2, ease: "power3.in" }, 6.8);
+      tl.to("#sp-content", { x: -510, filter: "blur(6px)", duration: 0.32, ease: "power3.in" }, 7.15);
+      tl.to("#sp-wall", { opacity: 1, duration: 0.2, ease: "power2.in" }, 7.28);
+      window.__timelines["spreads"] = tl;
+    })();
+  </script>
+</template>

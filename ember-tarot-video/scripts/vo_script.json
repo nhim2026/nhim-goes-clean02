@@ -1,0 +1,101 @@
+{
+  "voice_style": "Giọng nữ trẻ, tiếng Việt, vui tươi, tinh nghịch, hơi thì thầm huyền bí ở câu cuối. Nhịp nhanh kiểu TikTok.",
+  "lines": [
+    {
+      "id": "hook",
+      "scene": "hook",
+      "text": "Tự xem Tarot, ok hem?",
+      "start": 0.25
+    },
+    {
+      "id": "hook2",
+      "scene": "hook",
+      "text": "Có Ember lo hết nè!",
+      "start": 2.2
+    },
+    {
+      "id": "home",
+      "scene": "home",
+      "text": "Mở app, bấm Tarot ngay trên Trang chủ.",
+      "start": 4.35
+    },
+    {
+      "id": "spreads",
+      "scene": "spreads",
+      "text": "Tám trải bài cho từng nỗi niềm: một lá, ba lá, tình cảm, nhịp tuần, gương kết nối, hay tùy chọn.",
+      "start": 7.85
+    },
+    {
+      "id": "decks",
+      "scene": "decks",
+      "text": "Chọn bộ bài hợp vibe: Rider Waite cổ điển, hay mặt sau hoa bướm xinh xỉu.",
+      "start": 15.3
+    },
+    {
+      "id": "ask",
+      "scene": "ask",
+      "text": "Chọn kiểu trải, rồi gửi gắm tâm tư, câu hỏi của bạn.",
+      "start": 20.4
+    },
+    {
+      "id": "shuffle_a",
+      "scene": "shuffle",
+      "text": "Xáo bài,",
+      "start": 24.3
+    },
+    {
+      "id": "shuffle_b",
+      "scene": "shuffle",
+      "text": "rút bài,",
+      "start": 25.9
+    },
+    {
+      "id": "shuffle_c",
+      "scene": "shuffle",
+      "text": "lật bài.",
+      "start": 27.1
+    },
+    {
+      "id": "shuffle_d",
+      "scene": "shuffle",
+      "text": "Xong! Giờ chỉ cần chờ luận giải.",
+      "start": 28.6
+    },
+    {
+      "id": "meanings",
+      "scene": "meanings",
+      "text": "Trong lúc chờ, đọc ý nghĩa từng lá, như Ten of Cups hay Judgement.",
+      "start": 31.4
+    },
+    {
+      "id": "reading",
+      "scene": "reading",
+      "text": "Luận giải siêu chi tiết, có cả voice đọc cho bạn nghe luôn.",
+      "start": 36.25
+    },
+    {
+      "id": "keeper",
+      "scene": "keeper",
+      "text": "Vẫn còn thắc mắc? Hỏi tiếp Keeper AI nha.",
+      "start": 39.75
+    },
+    {
+      "id": "history",
+      "scene": "history",
+      "text": "Lịch sử xem bài lưu sẵn, xem lại lúc nào cũng được.",
+      "start": 43.45
+    },
+    {
+      "id": "cta",
+      "scene": "cta",
+      "text": "Tải app Ember liền!",
+      "start": 47.6
+    },
+    {
+      "id": "outro",
+      "scene": "cta",
+      "text": "Lá bài hôm nay, nói gì với bạn?",
+      "start": 50.6
+    }
+  ]
+}
